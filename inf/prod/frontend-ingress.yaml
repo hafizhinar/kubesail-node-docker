@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kubesail-node-docker-frontend
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: kubesail-node-docker-frontend
+              servicePort: 8080
+      host: hafizhinar.usw1.kubesail.org
+
